@@ -3,93 +3,107 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="description" content="Erdem Tuncer is a data analyst and data scientist building practical models, forecasts, and decision tools." />
-		<title>Erdem Tuncer | Data Analyst &amp; Data Scientist</title>
+		<meta name="description" content="Erdem Tuncer is a data analyst in healthcare payer analytics, working with Medicare Advantage, Part D, forecasting, and predictive models." />
+		<title>Erdem Tuncer | Healthcare Analytics</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
 		<link rel="stylesheet" href="assets/css/portfolio.css" />
 	</head>
 	<body>
 		<header class="site-header">
-			<a class="wordmark" href="#intro" aria-label="Erdem Tuncer, home">ET<span>.</span></a>
+			<a class="wordmark" href="#intro" aria-label="Erdem Tuncer, home">ET</a>
 			<nav class="site-nav" aria-label="Main navigation">
 				<a href="#projects">Projects</a>
-				<a href="#about">About</a>
+				<a href="#skills">Skills</a>
+				<a href="#experience">Experience</a>
 				<a href="#contact">Contact</a>
 			</nav>
 		</header>
 
 		<main class="page-layout">
-			<aside class="intro" id="intro">
+			<aside class="intro" id="intro" aria-labelledby="name">
 				<div class="intro-inner">
-					<p class="eyebrow"><span class="status-dot"></span> Data, with direction</p>
-					<h1>Erdem<br />Tuncer<span class="accent">.</span></h1>
-					<p class="intro-role">Data Analyst <span>&amp;</span> Data Scientist</p>
-					<p class="intro-copy">I use data to answer practical questions: where ratings may move, what demand may look like next, and which patterns deserve a closer look.</p>
-					<div class="intro-actions">
-						<a class="text-link" href="#projects">Explore selected work <span aria-hidden="true">↓</span></a>
-						<a class="text-link text-link-muted" href="https://www.linkedin.com/in/erdemtuncer/" target="_blank" rel="noopener">Get in touch <span aria-hidden="true">↗</span></a>
-					</div>
+					<p class="eyebrow">Healthcare analytics</p>
+					<h1 id="name">Erdem<br />Tuncer</h1>
+					<p class="intro-role">Data Analyst · Healthcare Payer Analytics</p>
+					<p class="intro-copy">I'm a data analyst in healthcare payer analytics. I build forecasting and predictive models for Medicare Advantage and Part D using Python, SQL, and Snowflake.</p>
 					<div class="intro-rule"></div>
-					<p class="intro-note">Analytics · Machine learning · Decision support</p>
+					<p class="intro-note">LinkedIn · GitHub</p>
+					<div class="intro-links"><a href="https://www.linkedin.com/in/erdemtuncer/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://github.com/erdem-tuncer/" target="_blank" rel="noopener noreferrer">GitHub</a></div>
 				</div>
 			</aside>
 
 			<div class="content-column">
 				<section class="work-section" id="projects" aria-labelledby="projects-title">
 					<div class="section-heading">
-						<p class="eyebrow">01 / Selected work</p>
-						<h2 id="projects-title">Questions worth<br class="mobile-break" /> answering.</h2>
-						<p class="section-intro">A few ways I turn complex data into a clearer next step.</p>
+						<p class="eyebrow">Selected work</p>
+						<h2 id="projects-title">Projects</h2>
+						<p class="section-intro">Projects in forecasting, predictive modeling, and payer analytics.</p>
 					</div>
 					<div class="project-list">
 						<article class="project-story">
-							<div class="story-title-row"><span class="story-number">01</span><div><p class="story-kicker">Predictive modeling · Healthcare</p><h3>CMS Star Ratings predictor</h3></div></div>
+							<div class="story-title-row"><div><p class="story-kicker">Predictive modeling · Healthcare</p><h3>CMS Star Ratings predictor</h3></div></div>
 							<div class="story-grid">
-								<div class="story-copy"><p class="story-label">The question</p><p>Can plan and measure data help anticipate a CMS star rating?</p></div>
-								<figure class="chart"><div class="chart-topline"><span>Predicted vs. observed</span><span class="chart-mark">MODEL</span></div><svg viewBox="0 0 300 126" role="img" aria-label="Illustrative predicted-versus-observed scatter chart"><path class="chart-gridline" d="M32 15V99H288M32 78H288M32 57H288M32 36H288"/><path class="chart-diagonal" d="M42 91L278 22"/><g class="chart-points"><circle cx="61" cy="83" r="4"/><circle cx="84" cy="80" r="4"/><circle cx="103" cy="68" r="4"/><circle cx="125" cy="72" r="4"/><circle cx="143" cy="57" r="4"/><circle cx="165" cy="62" r="4"/><circle cx="186" cy="47" r="4"/><circle cx="207" cy="50" r="4"/><circle cx="229" cy="34" r="4"/><circle cx="255" cy="38" r="4"/></g><text x="33" y="116">OBSERVED</text><text x="7" y="14">PRED.</text></svg><figcaption>Illustrative chart preview</figcaption></figure>
-								<div class="story-copy story-result"><p class="story-label">The result</p><p>A CatBoost predictor, wrapped in Streamlit for interactive rating estimates.</p></div>
+								<div class="story-copy"><p>I trained a CatBoost model using plan and measure data to estimate CMS Star Ratings. A Streamlit interface lets users review rating estimates.</p></div>
 							</div>
 							<ul class="project-tools" aria-label="Tools used"><li>CatBoost</li><li>Streamlit</li><li>CMS</li></ul>
 						</article>
 						<article class="project-story">
-							<div class="story-title-row"><span class="story-number">02</span><div><p class="story-kicker">Time series · Forecasting</p><h3>Complaint volume forecasting</h3></div></div>
-							<div class="story-grid">
-								<div class="story-copy"><p class="story-label">The question</p><p>How might complaint volume change over time, accounting for seasonal patterns?</p></div>
-								<figure class="chart"><div class="chart-topline"><span>Volume over time</span><span class="chart-mark">SARIMA</span></div><svg viewBox="0 0 300 126" role="img" aria-label="Illustrative time series with a forecast segment"><path class="chart-gridline" d="M12 16V100H288M12 79H288M12 58H288M12 37H288"/><path class="forecast-band" d="M185 54L209 42L233 49L257 31L281 39V70L257 61L233 76L209 62L185 69Z"/><path class="forecast-line" d="M18 75L39 68L60 74L81 51L102 61L123 46L144 58L165 38L185 54"/><path class="forecast-future" d="M185 54L209 51L233 63L257 46L281 55"/><path class="forecast-divider" d="M185 18V100"/><text x="18" y="116">HISTORY</text><text x="210" y="116">FORECAST</text></svg><figcaption>Illustrative chart preview</figcaption></figure>
-								<div class="story-copy story-result"><p class="story-label">The result</p><p>A SARIMA forecast that provides a time-aware baseline for complaint-volume planning.</p></div>
+							<div class="story-title-row"><div><p class="story-kicker">Time series · Forecasting</p><h3>Complaint volume forecasting</h3></div></div>
+							<div class="story-grid story-with-image">
+								<div class="story-copy"><p>I used SARIMA to model complaint volume over time and account for seasonal patterns. The forecast provides a baseline for planning.</p></div>
+								<figure class="project-image"><img src="images/time_series.png" alt="Time-series forecast from the complaint volume project" /><figcaption>Complaint volume forecast</figcaption></figure>
 							</div>
 							<ul class="project-tools" aria-label="Tools used"><li>Python</li><li>SARIMA</li><li>Time series</li></ul>
 						</article>
 						<article class="project-story">
-							<div class="story-title-row"><span class="story-number">03</span><div><p class="story-kicker">Anomaly detection · Medicare</p><h3>Part D prescriber outliers</h3></div></div>
+							<div class="story-title-row"><div><p class="story-kicker">Anomaly detection · Medicare</p><h3>Part D prescriber outliers</h3></div></div>
 							<div class="story-grid">
-								<div class="story-copy"><p class="story-label">The question</p><p>Which prescribers stand apart from peers after accounting for their context?</p></div>
-								<figure class="chart"><div class="chart-topline"><span>Prescriber comparison</span><span class="chart-mark">PART D</span></div><svg viewBox="0 0 300 126" role="img" aria-label="Illustrative peer distribution with a highlighted outlier"><path class="chart-gridline" d="M12 16V100H288M12 79H288M12 58H288M12 37H288"/><path class="distribution" d="M19 96C46 94 58 82 77 64C98 44 112 31 142 29C172 27 188 45 207 64C226 82 242 93 281 96"/><path class="distribution-fill" d="M19 96C46 94 58 82 77 64C98 44 112 31 142 29C172 27 188 45 207 64C226 82 242 93 281 96Z"/><path class="outlier-line" d="M247 91V34"/><circle class="outlier-dot" cx="247" cy="34" r="5"/><text x="12" y="116">PEER RANGE</text><text x="218" y="116">REVIEW</text></svg><figcaption>Illustrative chart preview</figcaption></figure>
-								<div class="story-copy story-result"><p class="story-label">The result</p><p>A peer-comparison workflow that surfaces unusual prescribing patterns for review.</p></div>
+								<div class="story-copy"><p>I compared Medicare Part D prescribers with their peers. The analysis flags unusual prescribing patterns for further review.</p></div>
 							</div>
 							<ul class="project-tools" aria-label="Tools used"><li>Medicare Part D</li><li>Outlier detection</li><li>Python</li></ul>
 						</article>
 						<article class="project-story">
-							<div class="story-title-row"><span class="story-number">04</span><div><p class="story-kicker">Business intelligence · Medicare</p><h3>Medicare Advantage enrollment</h3></div></div>
+							<div class="story-title-row"><div><p class="story-kicker">Business intelligence · Medicare</p><h3>Medicare Advantage enrollment</h3></div></div>
 							<div class="story-grid">
-								<div class="story-copy"><p class="story-label">The question</p><p>Where is Medicare Advantage enrollment shifting across plans and regions?</p></div>
-								<figure class="chart"><div class="chart-topline"><span>Enrollment by segment</span><span class="chart-mark">DASHBOARD</span></div><svg viewBox="0 0 300 126" role="img" aria-label="Illustrative enrollment trends across three segments"><path class="chart-gridline" d="M12 16V100H288M12 79H288M12 58H288M12 37H288"/><path class="enrollment-line line-one" d="M18 81L61 70L104 75L147 52L190 57L233 38L280 30"/><path class="enrollment-line line-two" d="M18 58L61 62L104 49L147 55L190 39L233 46L280 35"/><path class="enrollment-line line-three" d="M18 91L61 85L104 88L147 76L190 79L233 66L280 69"/><text x="18" y="116">SEGMENTS OVER TIME</text></svg><figcaption>Illustrative chart preview</figcaption></figure>
-								<div class="story-copy story-result"><p class="story-label">The result</p><p>A focused dashboard that brings enrollment trends and plan comparisons into one view.</p></div>
+								<div class="story-copy"><p>I built a Power BI dashboard to review enrollment by plan and region. It brings trend and comparison views together.</p></div>
 							</div>
 							<ul class="project-tools" aria-label="Tools used"><li>Power BI</li><li>Medicare Advantage</li><li>Enrollment</li></ul>
 						</article>
 					</div>
 				</section>
 
-				<section class="details-section" id="about" aria-label="Skills and experience">
-					<div class="details-block" id="skills"><p class="eyebrow">02 / Toolkit</p><h2>Tools for the<br />whole journey.</h2><ul class="skill-list"><li><span>Programming</span><span>Python · SQL</span></li><li><span>Data platforms</span><span>Snowflake</span></li><li><span>Modeling</span><span>CatBoost · SARIMA</span></li><li><span>Delivery</span><span>Power BI · Streamlit</span></li></ul></div>
-					<div class="details-block experience-block" id="experience"><p class="eyebrow">03 / Experience</p><h2>From analysis<br />to action.</h2><p class="experience-copy">I work across data analysis, predictive modeling, forecasting, and business intelligence, shaping complex datasets into useful answers and decision tools.</p></div>
+				<section class="details-section" aria-label="Skills and experience">
+					<div class="details-block" id="skills">
+						<p class="eyebrow">Skills</p>
+						<h2>Tools</h2>
+						<ul class="skill-list">
+							<li><span>Programming</span><span>Python · SQL</span></li>
+							<li><span>Data platform</span><span>Snowflake</span></li>
+							<li><span>Modeling</span><span>CatBoost · SARIMA</span></li>
+							<li><span>Reporting</span><span>Power BI · Streamlit</span></li>
+						</ul>
+					</div>
+					<div class="details-block experience-block" id="experience">
+						<p class="eyebrow">Work history</p>
+						<h2>Experience</h2>
+						<ol class="experience-list">
+							<li><h3>Data Analyst IV</h3><p>Medicare Advantage, Part D, Star Ratings, and payment integrity analysis.</p></li>
+							<li><h3>Data Analyst III</h3><p>Payer analytics for Medicare Advantage, Part D, and Star Ratings.</p></li>
+							<li><h3>Data Scientist II</h3><p>Forecasting and predictive modeling for healthcare operations.</p></li>
+						</ol>
+					</div>
 				</section>
 
-				<section class="contact-section" id="contact" aria-labelledby="contact-title"><p class="eyebrow">04 / Contact</p><div class="contact-layout"><div><h2 id="contact-title">Let's make<br />data useful<span class="accent">.</span></h2></div><div class="contact-links"><a href="https://www.linkedin.com/in/erdemtuncer/" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a><a href="https://github.com/erdem-tuncer/" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a></div></div></section>
-				<footer class="site-footer"><span>© 2026 Erdem Tuncer</span><a href="#intro">Back to top ↑</a></footer>
+				<section class="contact-section" id="contact" aria-labelledby="contact-title">
+					<p class="eyebrow">Contact</p>
+					<div class="contact-layout">
+						<div><h2 id="contact-title">Contact</h2><p class="contact-copy">You can reach me on LinkedIn or GitHub.</p></div>
+						<div class="contact-links"><a href="https://www.linkedin.com/in/erdemtuncer/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://github.com/erdem-tuncer/" target="_blank" rel="noopener noreferrer">GitHub</a></div>
+					</div>
+				</section>
+				<footer class="site-footer"><span>© 2026 Erdem Tuncer</span><a href="#intro">Back to top</a></footer>
 			</div>
 		</main>
 	</body>
